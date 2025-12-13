@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Evento di Natale · Vetrina Digitale</title>
+  <meta name="description" content="Evento di Natale: musica, luci, mercatini e intrattenimento. Scansiona il QR e scopri tutte le informazioni.">
+
+  <style>
+    :root {
+      --red: #b11226;
+      --green: #0f5132;
+      --gold: #f5c26b;
+      --dark: #0e0e0e;
+      --light: #f8f8f8;
+      --white: #ffffff;
+      --gray: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--red), var(--green));
+      color: var(--white);
+      text-align: center;
+      padding: 110px 20px;
+    }
+
+    .hero .micro {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.75rem;
+      opacity: 0.9;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero .subtitle {
+      max-width: 640px;
+      margin: 0 auto 36px;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    /* CTA */
+    .cta {
+      display: inline-block;
+      padding: 16px 38px;
+      background: var(--gold);
+      color: #000;
+      font-weight: 800;
+      border-radius: 14px;
+    }
+
+    /* INFO EVENTO */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .info-card {
+      background: var(--white);
+      padding: 28px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .info-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* PROGRAMMA */
+    .program {
+      background: #fff;
+    }
+
+    .program ul {
+      max-width: 700px;
+      margin: 0 auto;
+      list-style: none;
+    }
+
+    .program li {
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    /* CTA FINALE */
+    .final-cta {
+      background: linear-gradient(135deg, var(--green), var(--red));
+      color: var(--white);
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .final-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .final-cta p {
+      max-width: 600px;
+      margin: 0 auto 32px;
+      opacity: 0.95;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero {
+        padding: 90px 20px;
+      }
+
+      .cta {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="micro">Evento Speciale</p>
+    <h1>Magia di Natale in Città</h1>
+    <p class="subtitle">
+      Luci, musica, mercatini e intrattenimento per grandi e piccoli.
+      Un evento da vivere insieme.
+    </p>
+    <a href="#info" class="cta">Scopri l’evento</a>
+  </header>
+
+  <!-- INFO -->
+  <section id="info">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>📍 Dove</h3>
+          <p>Piazza Centrale · Centro città</p>
+        </div>
+        <div class="info-card">
+          <h3>📅 Quando</h3>
+          <p>20 – 24 Dicembre</p>
+        </div>
+        <div class="info-card">
+          <h3>🎟 Ingresso</h3>
+          <p>Gratuito</p>
+        </div>
+        <div class="info-card">
+          <h3>🎄 Per chi</h3>
+          <p>Famiglie, bambini, amici</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMMA -->
+  <section class="program">
+    <div class="container">
+      <h2 style="text-align:center;margin-bottom:32px;">Programma</h2>
+      <ul>
+        <li>🎅 Villaggio di Babbo Natale</li>
+        <li>🎶 Concerti e cori natalizi</li>
+        <li>🛍 Mercatini artigianali</li>
+        <li>🍷 Street food e vin brulé</li>
+        <li>🎆 Accensione luci serale</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <div class="container">
+      <h2 style="text-align:center;margin-bottom:32px;">Atmosfera dell’evento</h2>
+      <div class="gallery">
+        <img src="img/christmas1.jpg" alt="Luci di Natale">
+        <img src="img/christmas2.jpg" alt="Mercatini di Natale">
+        <img src="img/christmas3.jpg" alt="Concerto natalizio">
+        <img src="img/christmas4.jpg" alt="Villaggio di Babbo Natale">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINALE -->
+  <section class="final-cta">
+    <h2>Ti aspettiamo!</h2>
+    <p>
+      Scansiona il QR, condividi l’evento e vivi la magia del Natale insieme a noi.
+    </p>
+    <a href="#" class="cta">Condividi evento</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Evento dimostrativo · Vetrina digitale QRImpresa
+  </footer>
+
+</body>
+</html>
