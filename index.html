@@ -171,6 +171,38 @@ img:hover {
   margin-bottom:60px;
 }
 
+/* RECENSIONI */
+.reviews {
+  background:#f0f0f0;
+  padding:60px 20px;
+  border-radius:16px;
+  margin-bottom:60px;
+}
+
+.reviews h2 {
+  text-align:center;
+  margin-bottom:40px;
+  font-size:2rem;
+}
+
+.review-card {
+  background:#fff;
+  padding:24px;
+  border-radius:14px;
+  box-shadow:0 8px 20px var(--shadow);
+  margin-bottom:24px;
+}
+
+.review-card p {
+  font-style:italic;
+  margin-bottom:12px;
+}
+
+.review-card span {
+  font-weight:700;
+  color:var(--red);
+}
+
 /* FINAL CTA */
 .final-cta {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('img/hero-event.jpg') center / cover no-repeat;
@@ -187,7 +219,7 @@ img:hover {
 .final-cta p {
   max-width:600px;
   margin:0 auto 32px;
-  opacity:0.95;
+  opacity:.95;
 }
 
 /* FOOTER */
@@ -242,18 +274,26 @@ footer {
       <h3>🎄 Per chi</h3>
       <p>Famiglie, bambini, amici</p>
     </div>
+    <div class="info-card">
+      <h3>🅿️ Parcheggio</h3>
+      <p>Disponibile vicino alla piazza centrale</p>
+    </div>
+    <div class="info-card">
+      <h3>☎️ Contatti</h3>
+      <p>Info e prenotazioni: +39 123 456 789</p>
+    </div>
   </div>
 </section>
 
 <!-- PROGRAMMA -->
 <section class="program">
-  <h2>Programma</h2>
+  <h2>Programma Giornaliero</h2>
   <ul>
-    <li>🎅 Villaggio di Babbo Natale</li>
-    <li>🎶 Concerti e cori natalizi</li>
-    <li>🛍 Mercatini artigianali</li>
-    <li>🍷 Street food e vin brulé</li>
-    <li>🎆 Accensione luci serale</li>
+    <li>10:00 – 12:00 🎅 Villaggio di Babbo Natale</li>
+    <li>12:30 – 14:00 🛍 Mercatini artigianali</li>
+    <li>15:00 – 17:00 🎶 Concerti e cori natalizi</li>
+    <li>17:30 – 19:00 🍷 Street food e vin brulé</li>
+    <li>19:30 – 21:00 🎆 Accensione luci serale</li>
   </ul>
 </section>
 
@@ -266,6 +306,25 @@ footer {
       <img src="img/christmas2.jpg" alt="Mercatini di Natale">
       <img src="img/christmas3.jpg" alt="Concerto natalizio">
       <img src="img/christmas4.jpg" alt="Villaggio di Babbo Natale">
+    </div>
+  </div>
+</section>
+
+<!-- RECENSIONI -->
+<section class="reviews">
+  <div class="container">
+    <h2>Recensioni delle edizioni precedenti</h2>
+    <div class="review-card">
+      <p>"Un'esperienza magica! I bambini si sono divertiti tantissimo e l'atmosfera era fantastica."</p>
+      <span>– Marta R.</span>
+    </div>
+    <div class="review-card">
+      <p>"Luci incredibili, ottimo cibo e tanto intrattenimento. Non vedo l'ora della prossima edizione."</p>
+      <span>– Luca T.</span>
+    </div>
+    <div class="review-card">
+      <p>"Evento perfetto per famiglie e amici. Consigliatissimo!"</p>
+      <span>– Giulia F.</span>
     </div>
   </div>
 </section>
